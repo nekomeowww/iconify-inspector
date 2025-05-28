@@ -1,0 +1,5 @@
+# Iconify Inspector
+
+## License
+
+MIT
