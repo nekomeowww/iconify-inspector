@@ -22,8 +22,8 @@ importers:
         specifier: ^4.13.2
         version: 4.13.2(@unocss/eslint-plugin@66.1.2(eslint@9.27.0(jiti@2.4.2))(typescript@5.8.3))(@vue/compiler-sfc@3.5.15)(eslint@9.27.0(jiti@2.4.2))(typescript@5.8.3)(vitest@3.1.4(@types/debug@4.1.12)(@types/node@22.15.23)(jiti@2.4.2)(tsx@4.19.4)(yaml@2.8.0))
       '@antfu/ni':
-        specifier: ^24.4.0
-        version: 24.4.0
+        specifier: ^25.0.0
+        version: 25.0.0
       '@antfu/nip':
         specifier: ^0.1.0
         version: 0.1.0
@@ -199,6 +199,10 @@ packages:
 
   '@antfu/ni@24.4.0':
     resolution: {integrity: sha512-ZjriRbGyWGSrBE1RY2qBIXyilejMWLDWh2Go2dqFottyiuOze36+BpPch2z2WnGEgEbzTBVPetMmQvt0xt+iww==}
+    hasBin: true
+
+  '@antfu/ni@25.0.0':
+    resolution: {integrity: sha512-9q/yCljni37pkMr4sPrI3G4jqdIk074+iukc5aFJl7kmDCCsiJrbZ6zKxnES1Gwg+i9RcDZwvktl23puGslmvA==}
     hasBin: true
 
   '@antfu/nip@0.1.0':
@@ -3471,6 +3475,13 @@ snapshots:
       tinyexec: 1.0.1
 
   '@antfu/ni@24.4.0':
+    dependencies:
+      ansis: 4.0.0
+      fzf: 0.5.2
+      package-manager-detector: 1.3.0
+      tinyexec: 1.0.1
+
+  '@antfu/ni@25.0.0':
     dependencies:
       ansis: 4.0.0
       fzf: 0.5.2
