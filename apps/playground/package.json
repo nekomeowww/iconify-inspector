@@ -2,7 +2,7 @@
   "name": "@nekw/iconify-inspector",
   "type": "module",
   "private": true,
-  "description": "Inspector for Iconify JSON icons",
+  "description": "Inspector for Iconify icons",
   "author": {
     "name": "Neko Ayaka",
     "email": "neko@ayaka.moe",
