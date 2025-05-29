@@ -35,7 +35,6 @@
     "@antfu/eslint-config": "^4.13.2",
     "@antfu/ni": "^25.0.0",
     "@antfu/nip": "^0.1.0",
-    "@catppuccin/palette": "^1.7.1",
     "@types/node": "^22.15.24",
     "@unocss/eslint-config": "^66.1.2",
     "@unocss/eslint-plugin": "^66.1.2",

@@ -34,8 +34,5 @@ watch([route], async () => {
     <div w-full flex flex-row gap-2 h-full>
       <div />
     </div>
-    <div ref="pageTitleRef" text="latte-text dark:macchiato-text 30" absolute bottom--18 right--10 opacity-20 filter="blur-[5px]" select-none>
-      Editor
-    </div>
   </div>
 </template>
