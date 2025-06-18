@@ -2,7 +2,7 @@
 
 # Iconify Inspector
 
-[[Try it](https://icons.ayaka.io)]
+[[Try it](https://iconify.ayaka.io)]
 
 ## License
 
