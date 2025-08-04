@@ -36,7 +36,7 @@
     "@iconify/utils": "^2.3.0",
     "@package-json/types": "^0.0.11",
     "@unocss/reset": "^66.1.4",
-    "@vitejs/plugin-vue": "^5.2.4",
+    "@vitejs/plugin-vue": "^6.0.1",
     "@vueuse/core": "^13.3.0",
     "@vueuse/motion": "^3.0.3",
     "es-toolkit": "^1.39.3",
