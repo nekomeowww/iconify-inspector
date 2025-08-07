@@ -16,5 +16,9 @@ const style = computed(() => {
 </script>
 
 <template>
-  <div :style="style" style="overflow: visible;" :class="[props.name]" />
+  <div
+    :style="style"
+    style="overflow: visible;"
+    :class="[props.name]"
+  />
 </template>

@@ -24,10 +24,13 @@
   },
   "dependencies": {
     "@proj-airi/lobe-icons": "^1.0.7",
-    "ofetch": "^1.4.1"
+    "ofetch": "^1.4.1",
+    "vaul-vue": "^0.4.1",
+    "vue-vaul": "^1.0.7"
   },
   "devDependencies": {
     "@iconify-json/devicon": "^1.2.28",
+    "@iconify-json/logos": "^1.2.5",
     "@iconify-json/ph": "^1.2.2",
     "@iconify-json/simple-icons": "^1.2.38",
     "@iconify-json/solar": "^1.2.2",

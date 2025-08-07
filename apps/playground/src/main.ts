@@ -1,6 +1,6 @@
 import { MotionPlugin } from '@vueuse/motion'
 import { createApp } from 'vue'
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import { routes } from 'vue-router/auto-routes'
 
 import App from './App.vue'
@@ -9,7 +9,7 @@ import 'uno.css'
 import './styles/themes.css'
 import 'splitpanes/dist/splitpanes.css'
 
-const router = createRouter({ history: createWebHashHistory(), routes })
+const router = createRouter({ history: createWebHistory(), routes })
 
 createApp(App)
   .use(router)

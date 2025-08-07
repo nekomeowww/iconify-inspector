@@ -8,9 +8,9 @@ const toggleDark = useToggle(isDark)
 
 <template>
   <div mx-auto h-full flex flex-col gap-2 w-full>
-    <div grid="~ cols-[1fr_1fr_1fr]" h-fit px-4 py-4 w-full bg="neutral-100 dark:neutral-900">
+    <div grid="~ cols-[1fr_1fr_1fr]" h="56px" px-4 py-4 w-full bg="neutral-100 dark:neutral-900" fixed top-0 z-5>
       <div w-full />
-      <div w-full text-center>
+      <div w-full text-center text-nowrap>
         Iconify Inspector
       </div>
       <div flex justify-end gap-2>
@@ -37,7 +37,8 @@ const toggleDark = useToggle(isDark)
         </button>
       </div>
     </div>
-    <div flex-1 w-full py-5>
+    <div flex-1 w-full p-5 overflow-visible flex flex-col>
+      <div h="56px" />
       <RouterView />
     </div>
   </div>
