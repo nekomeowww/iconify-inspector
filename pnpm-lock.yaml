@@ -98,8 +98,8 @@ importers:
         specifier: ^1.2.37
         version: 1.2.37
       '@iconify-json/logos':
-        specifier: ^1.2.5
-        version: 1.2.5
+        specifier: ^1.2.6
+        version: 1.2.6
       '@iconify-json/ph':
         specifier: ^1.2.2
         version: 1.2.2
@@ -718,8 +718,8 @@ packages:
   '@iconify-json/devicon@1.2.37':
     resolution: {integrity: sha512-+NqyJCXZ/XoE2vfTLIrwEO7GLyJrBqSWxjQLmOpaJNqam1gdBuETJrSpuX3y24eFtkz82ioFbm0It1RNcKjrDg==}
 
-  '@iconify-json/logos@1.2.5':
-    resolution: {integrity: sha512-WR8+9kFwx1tIR+hWpKYC+rpVkAuzHyaVxZRfhGGIjqCfgbodK7rS4+OZhktdKtZKKcdmhpLZKvlmRm4IA4dKRg==}
+  '@iconify-json/logos@1.2.6':
+    resolution: {integrity: sha512-/f6lDJvVCyQdOZ7vyh/h7Nb0lXvZz9KToaGfdsGLg0Y7Nwf6VotrByM0xKwB49GpmlaDmUHFflHrILPZtXTPUA==}
 
   '@iconify-json/ph@1.2.2':
     resolution: {integrity: sha512-PgkEZNtqa8hBGjHXQa4pMwZa93hmfu8FUSjs/nv4oUU6yLsgv+gh9nu28Kqi8Fz9CCVu4hj1MZs9/60J57IzFw==}
@@ -3956,7 +3956,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/logos@1.2.5':
+  '@iconify-json/logos@1.2.6':
     dependencies:
       '@iconify/types': 2.0.0
 
