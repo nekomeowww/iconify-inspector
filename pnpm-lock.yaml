@@ -95,11 +95,11 @@ importers:
         version: 1.0.7(typescript@5.9.2)(vue@3.5.18(typescript@5.9.2))
     devDependencies:
       '@iconify-json/devicon':
-        specifier: ^1.2.37
-        version: 1.2.37
+        specifier: ^1.2.39
+        version: 1.2.39
       '@iconify-json/logos':
-        specifier: ^1.2.6
-        version: 1.2.6
+        specifier: ^1.2.7
+        version: 1.2.7
       '@iconify-json/ph':
         specifier: ^1.2.2
         version: 1.2.2
@@ -715,11 +715,11 @@ packages:
     resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
     engines: {node: '>=18.18'}
 
-  '@iconify-json/devicon@1.2.37':
-    resolution: {integrity: sha512-+NqyJCXZ/XoE2vfTLIrwEO7GLyJrBqSWxjQLmOpaJNqam1gdBuETJrSpuX3y24eFtkz82ioFbm0It1RNcKjrDg==}
+  '@iconify-json/devicon@1.2.39':
+    resolution: {integrity: sha512-KDDsEHmVu3lOJ7HKnvH8inY5wqRX4uDL8MODp5+6CpWP58dcL4WdsEvjLJl9B52x//bLCM2kSXIK6d2xq5qfWw==}
 
-  '@iconify-json/logos@1.2.6':
-    resolution: {integrity: sha512-/f6lDJvVCyQdOZ7vyh/h7Nb0lXvZz9KToaGfdsGLg0Y7Nwf6VotrByM0xKwB49GpmlaDmUHFflHrILPZtXTPUA==}
+  '@iconify-json/logos@1.2.7':
+    resolution: {integrity: sha512-UQBPCLguHok/NpOa23PRzVjw55yPS7uA3HOPZTX5UnB/bNZMsKb/pHz9aqZBGtmFVP4UQ867xqDW8BLLwkzz9A==}
 
   '@iconify-json/ph@1.2.2':
     resolution: {integrity: sha512-PgkEZNtqa8hBGjHXQa4pMwZa93hmfu8FUSjs/nv4oUU6yLsgv+gh9nu28Kqi8Fz9CCVu4hj1MZs9/60J57IzFw==}
@@ -3952,11 +3952,11 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@iconify-json/devicon@1.2.37':
+  '@iconify-json/devicon@1.2.39':
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/logos@1.2.6':
+  '@iconify-json/logos@1.2.7':
     dependencies:
       '@iconify/types': 2.0.0
 
