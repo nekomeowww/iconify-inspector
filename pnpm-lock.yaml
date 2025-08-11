@@ -116,8 +116,8 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
       '@iconify/utils':
-        specifier: ^3.0.0
-        version: 3.0.0
+        specifier: ^3.0.1
+        version: 3.0.1
       '@package-json/types':
         specifier: ^0.0.11
         version: 0.0.11
@@ -728,8 +728,8 @@ packages:
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
 
-  '@iconify/utils@3.0.0':
-    resolution: {integrity: sha512-Bjf0HTRAB59thKK9QFvyLEXE9S793IqxqJEhNQEboh+IjOXj0nDtOIFh63oz+Y6X/ye4UWpxne5sVQ2W250iSA==}
+  '@iconify/utils@3.0.1':
+    resolution: {integrity: sha512-A78CUEnFGX8I/WlILxJCuIJXloL0j/OJ9PSchPAfCargEIKmUBWvvEMmKWB5oONwiUqlNt+5eRufdkLxeHIWYw==}
 
   '@internationalized/date@3.8.2':
     resolution: {integrity: sha512-/wENk7CbvLbkUvX1tu0mwq49CVkkWpkXubGel6birjRPyo6uQ4nQpnq5xZu823zRCwwn82zgHrvgF1vZyvmVgA==}
@@ -3949,7 +3949,7 @@ snapshots:
 
   '@iconify/types@2.0.0': {}
 
-  '@iconify/utils@3.0.0':
+  '@iconify/utils@3.0.1':
     dependencies:
       '@antfu/install-pkg': 1.1.0
       '@antfu/utils': 9.2.0
@@ -4406,7 +4406,7 @@ snapshots:
 
   '@unocss/preset-icons@66.4.2':
     dependencies:
-      '@iconify/utils': 3.0.0
+      '@iconify/utils': 3.0.1
       '@unocss/core': 66.4.2
       ofetch: 1.4.1
     transitivePeerDependencies:
