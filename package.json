@@ -34,7 +34,7 @@
     "nolyfill": "pnpm dlx nolyfill"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^5.2.0",
+    "@antfu/eslint-config": "^5.2.1",
     "@antfu/ni": "^25.0.0",
     "@antfu/nip": "^0.1.0",
     "@types/node": "^22.17.1",
