@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { ref } from 'vue'
 
 const props = defineProps<{
@@ -68,7 +67,7 @@ async function copyText() {
         <span style="color:#DBD7CAEE;" /><span style="color:#DBD7CAEE;" />
         <span style="color:#C98A7D;">{{ props.collection.id }}</span>
       </code>
-      <button @click="copyText" outline-none text="neutral-500 dark:neutral-400">
+      <button outline-none text="neutral-500 dark:neutral-400" @click="copyText">
         <Transition name="fade-slide-x" mode="out-in">
           <div v-if="status" i-ph:check-bold />
           <div v-else i-ph:copy-bold />

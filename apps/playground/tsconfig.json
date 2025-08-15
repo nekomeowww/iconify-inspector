@@ -19,6 +19,7 @@
     "skipLibCheck": true
   },
   "include": [
+    "src/typed-router.d.ts",
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.mts",

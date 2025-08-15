@@ -10,7 +10,6 @@
 .temp
 .vite-inspect
 components.d.ts
-**/typed-router.d.ts
 node_modules
 .eslintcache
 **/tsconfig.tsbuildinfo

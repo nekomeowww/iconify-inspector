@@ -1,10 +1,8 @@
 <script setup lang="ts">
-import type { IconifyInfo, IconifyJSON, IconifyJSONIconsData } from '@iconify/types'
-import type { IconifyMetaData } from '@iconify/types'
+import type { IconifyInfo, IconifyJSON, IconifyJSONIconsData, IconifyMetaData } from '@iconify/types'
 import type { PackageJSON } from '@package-json/types'
 
-import { useClipboard } from '@vueuse/core'
-import { refDebounced } from '@vueuse/core'
+import { refDebounced, useClipboard } from '@vueuse/core'
 import { useMotion } from '@vueuse/motion'
 import { ofetch } from 'ofetch'
 import { resolve } from 'resolve.exports'
@@ -195,7 +193,7 @@ async function load() {
         </div>
         <div w-full>
           <label w-full flex overflow-visible>
-            <input v-model="filterIconSearchTerm" type="search" appearance-none w-full outline-none rounded-lg my-2 px-3 py-2 class="focus:ring-2 ring-0" transition="all duration-250 ease-in-out" placeholder="Search icons..." >
+            <input v-model="filterIconSearchTerm" type="search" appearance-none w-full outline-none rounded-lg my-2 px-3 py-2 class="focus:ring-2 ring-0" transition="all duration-250 ease-in-out" placeholder="Search icons...">
           </label>
         </div>
         <div w-full flex flex-wrap gap-2>
@@ -219,7 +217,7 @@ async function load() {
                       <div font-mono>
                         {{ iconifyJSONIcons.prefix }}:{{ name }}
                       </div>
-                      <button @click="handleCopy(`${iconifyJSONIcons.prefix}:${name}`)" outline-none>
+                      <button outline-none @click="handleCopy(`${iconifyJSONIcons.prefix}:${name}`)">
                         <Transition name="fade-slide-x" mode="out-in">
                           <div v-if="copied" i-ph:check-bold />
                           <div v-else i-ph:copy-bold />
