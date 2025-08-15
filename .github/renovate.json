@@ -3,16 +3,23 @@
   "extends": [
     "config:recommended",
     ":dependencyDashboard",
-    ":semanticPrefixFixDepsChoreOthers",
+
+    "schedule:weekly",
     ":prHourlyLimitNone",
     ":prConcurrentLimitNone",
+    ":automergeStableNonMajor",
+
+    ":semanticPrefixFixDepsChoreOthers",
     ":ignoreModulesAndTests",
+
     "group:monorepos",
     "group:recommended",
     "group:allNonMajor",
+
     "replacements:all",
     "workarounds:all"
   ],
+  "labels": ["dependencies"],
   "rangeStrategy": "bump",
-  "labels": ["dependencies"]
+  "automergeStrategy": "squash"
 }
