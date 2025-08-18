@@ -95,8 +95,8 @@ importers:
         version: 1.0.7(typescript@5.9.2)(vue@3.5.18(typescript@5.9.2))
     devDependencies:
       '@iconify-json/devicon':
-        specifier: ^1.2.41
-        version: 1.2.41
+        specifier: ^1.2.42
+        version: 1.2.42
       '@iconify-json/logos':
         specifier: ^1.2.9
         version: 1.2.9
@@ -104,8 +104,8 @@ importers:
         specifier: ^1.2.2
         version: 1.2.2
       '@iconify-json/simple-icons':
-        specifier: ^1.2.47
-        version: 1.2.47
+        specifier: ^1.2.48
+        version: 1.2.48
       '@iconify-json/solar':
         specifier: ^1.2.4
         version: 1.2.4
@@ -134,8 +134,8 @@ importers:
         specifier: ^3.0.3
         version: 3.0.3(vue@3.5.18(typescript@5.9.2))
       es-toolkit:
-        specifier: ^1.39.9
-        version: 1.39.9
+        specifier: ^1.39.10
+        version: 1.39.10
       iconify-icon:
         specifier: ^3.0.0
         version: 3.0.0
@@ -713,8 +713,8 @@ packages:
     resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
     engines: {node: '>=18.18'}
 
-  '@iconify-json/devicon@1.2.41':
-    resolution: {integrity: sha512-4hCbtXRkdwbzemxVc7+6LQT0cOQaD1SHZpElhuV0YC5JfUqBu7T5ejRcjgim1lJO888Mj0WSp4th1eUhDEChUg==}
+  '@iconify-json/devicon@1.2.42':
+    resolution: {integrity: sha512-gYQ81pzl0/K1bgfFumV5hwTSFKVyQEd/kH0WVHNubza8F6TLh2AjfV5vXIMvxOojdl752UsMbHQvd2uA6QiDvg==}
 
   '@iconify-json/logos@1.2.9':
     resolution: {integrity: sha512-G6VCdFnwZcrT6Eveq3m43oJfLw/CX8plwFcE+2jgv3fiGB64pTmnU7Yd1MNZ/eA+/Re2iEDhuCfSNOWTHwwK8w==}
@@ -722,8 +722,8 @@ packages:
   '@iconify-json/ph@1.2.2':
     resolution: {integrity: sha512-PgkEZNtqa8hBGjHXQa4pMwZa93hmfu8FUSjs/nv4oUU6yLsgv+gh9nu28Kqi8Fz9CCVu4hj1MZs9/60J57IzFw==}
 
-  '@iconify-json/simple-icons@1.2.47':
-    resolution: {integrity: sha512-wa/2O7G4sBmwSEWWLh5C+HeY00lVOoWYRKJOYQtk7lAbQrHUReD1ijiGOyTynV1YavxtNueL1CBA1UZmYJfOrQ==}
+  '@iconify-json/simple-icons@1.2.48':
+    resolution: {integrity: sha512-EACOtZMoPJtERiAbX1De0asrrCtlwI27+03c9OJlYWsly9w1O5vcD8rTzh+kDPjo+K8FOVnq2Qy+h/CzljSKDA==}
 
   '@iconify-json/solar@1.2.4':
     resolution: {integrity: sha512-ruAh+bbYimlzqXW6MtqmvWlfatvFjE7o1fZWieps1h42Dx7AaHu4Z/dgOYSO1RR4MIhNzD+2xgEbFjASgBcEyg==}
@@ -1802,8 +1802,8 @@ packages:
   es-module-lexer@1.7.0:
     resolution: {integrity: sha512-jEQoCwk8hyb2AZziIOLhDqpm5+2ww5uIE6lkO/6jcOCusfk6LhMHpXXfBLXTZ7Ydyt0j4VoUQv6uGNYbdW+kBA==}
 
-  es-toolkit@1.39.9:
-    resolution: {integrity: sha512-9OtbkZmTA2Qc9groyA1PUNeb6knVTkvB2RSdr/LcJXDL8IdEakaxwXLHXa7VX/Wj0GmdMJPR3WhnPGhiP3E+qg==}
+  es-toolkit@1.39.10:
+    resolution: {integrity: sha512-E0iGnTtbDhkeczB0T+mxmoVlT4YNweEKBLq7oaU4p11mecdsZpNWOglI4895Vh4usbQ+LsJiuLuI2L0Vdmfm2w==}
 
   esbuild@0.25.8:
     resolution: {integrity: sha512-vVC0USHGtMi8+R4Kz8rt6JhEWLxsv9Rnu/lGYbPR8u47B+DCBksq9JarW0zOO7bs37hyOK1l2/oqtbciutL5+Q==}
@@ -3922,7 +3922,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@iconify-json/devicon@1.2.41':
+  '@iconify-json/devicon@1.2.42':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -3934,7 +3934,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/simple-icons@1.2.47':
+  '@iconify-json/simple-icons@1.2.48':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -5175,7 +5175,7 @@ snapshots:
 
   es-module-lexer@1.7.0: {}
 
-  es-toolkit@1.39.9: {}
+  es-toolkit@1.39.10: {}
 
   esbuild@0.25.8:
     optionalDependencies:

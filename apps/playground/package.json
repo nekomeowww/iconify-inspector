@@ -29,10 +29,10 @@
     "vue-vaul": "^1.0.7"
   },
   "devDependencies": {
-    "@iconify-json/devicon": "^1.2.41",
+    "@iconify-json/devicon": "^1.2.42",
     "@iconify-json/logos": "^1.2.9",
     "@iconify-json/ph": "^1.2.2",
-    "@iconify-json/simple-icons": "^1.2.47",
+    "@iconify-json/simple-icons": "^1.2.48",
     "@iconify-json/solar": "^1.2.4",
     "@iconify-json/svg-spinners": "^1.2.4",
     "@iconify/types": "^2.0.0",
@@ -42,7 +42,7 @@
     "@vitejs/plugin-vue": "^6.0.1",
     "@vueuse/core": "^13.6.0",
     "@vueuse/motion": "^3.0.3",
-    "es-toolkit": "^1.39.9",
+    "es-toolkit": "^1.39.10",
     "iconify-icon": "^3.0.0",
     "resolve.exports": "^2.0.3",
     "splitpanes": "^4.0.4",
