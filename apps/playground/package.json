@@ -29,10 +29,10 @@
     "vue-vaul": "^1.0.7"
   },
   "devDependencies": {
-    "@iconify-json/devicon": "^1.2.44",
+    "@iconify-json/devicon": "^1.2.45",
     "@iconify-json/logos": "^1.2.9",
     "@iconify-json/ph": "^1.2.2",
-    "@iconify-json/simple-icons": "^1.2.52",
+    "@iconify-json/simple-icons": "^1.2.53",
     "@iconify-json/solar": "^1.2.4",
     "@iconify-json/svg-spinners": "^1.2.4",
     "@iconify/types": "^2.0.0",
@@ -47,8 +47,8 @@
     "resolve.exports": "^2.0.3",
     "splitpanes": "^4.0.4",
     "unplugin-vue-router": "^0.15.0",
-    "vue": "^3.5.21",
+    "vue": "^3.5.22",
     "vue-router": "^4.5.1",
-    "vue-tsc": "^3.0.8"
+    "vue-tsc": "^3.1.0"
   }
 }
