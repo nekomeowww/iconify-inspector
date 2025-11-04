@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "automerge": true,
+  "automerge": false,
   "dependencyDashboard": true,
   "extends": [
     "config:recommended",
@@ -18,22 +18,34 @@
   "labels": ["dependencies"],
 
   "packageRules": [
+    // 1) Pinned deps: isolate
     {
-      "description": "Isolate PRs for pinned dependencies (no ^ or ~), and split patch/minor/major",
-      // matches exact semver like 1.2.3 (adjust if you also pin pre-releases)
-      "matchCurrentValue": "^\\d+\\.\\d+\\.\\d+(-[0-9A-Za-z.-]+)?$",
-      "groupName": null, // cancel any grouping from presets
-      "separateMinorPatch": true, // split patch vs minor
-      "separateMajorMinor": true, // split major vs minor
-      "separateMultipleMinor": true, // one PR per minor step if multiple are available
-      "separateMultipleMajor": true, // one PR per major step if multiple are available
-      "rangeStrategy": "bump" // fine for pinned; keeps exact spec as exact
+      "description": "Isolate PRs for pinned deps (exact x.y.z)",
+      "matchManagers": ["npm", "pnpm", "yarn", "bun"],
+      "matchDepTypes": ["dependencies", "devDependencies", "optionalDependencies", "peerDependencies"],
+      // exact semver, optionally with pre-release/build metadata
+      "matchCurrentValue": "^\\d+\\.\\d+\\.\\d+([+-][0-9A-Za-z.-]+)?$",
+      "groupName": null,
+      "separateMinorPatch": true,
+      "separateMajorMinor": true,
+      "separateMultipleMinor": true,
+      "separateMultipleMajor": true
     },
+
+    // 2) Non-pinned deps: group non-majors (minor + patch) together
     {
-      "description": "Group only ranged patch updates (leave pinned alone)",
-      "matchCurrentValue": "^[^0-9].*|\\d+\\.\\d+\\.\\d+\\s*-\\s*.*|[<>=~^].*",
-      "matchUpdateTypes": ["patch"],
-      "groupName": "all non-minor dependencies"
+      "description": "Group non-major bumps for ranged specs (^ / ~ / comparators)",
+      "matchManagers": ["npm", "pnpm", "yarn", "bun"],
+      "matchDepTypes": ["dependencies", "devDependencies", "optionalDependencies", "peerDependencies"],
+      // anything starting with ^ or ~ OR contains <, >, =, ||, - (range-ish)
+      "matchCurrentValue": "^[~^]|[<>=| -]",
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "deps (non-major)",
+      // override any global splitting so minor+patch can be grouped
+      "separateMinorPatch": false,
+      "separateMajorMinor": true,
+      "separateMultipleMinor": false,
+      "separateMultipleMajor": true
     }
   ],
 
