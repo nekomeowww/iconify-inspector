@@ -104,13 +104,13 @@ importers:
         specifier: 1.2.2
         version: 1.2.2
       '@iconify-json/simple-icons':
-        specifier: 1.2.55
+        specifier: ^1.2.55
         version: 1.2.55
       '@iconify-json/solar':
-        specifier: 1.2.4
+        specifier: ^1.2.4
         version: 1.2.4
       '@iconify-json/svg-spinners':
-        specifier: 1.2.4
+        specifier: ~1.2.4
         version: 1.2.4
       '@iconify/types':
         specifier: ^2.0.0
