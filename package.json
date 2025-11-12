@@ -37,7 +37,7 @@
     "@antfu/eslint-config": "6.1.0",
     "@antfu/ni": "~27.0.1",
     "@antfu/nip": "~0.1.0",
-    "@types/node": "~22.18.12",
+    "@types/node": "~24.10.1",
     "@unocss/eslint-config": "^66.5.4",
     "@unocss/eslint-plugin": "^66.5.4",
     "@unocss/preset-mini": "^66.5.4",
