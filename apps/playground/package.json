@@ -23,8 +23,8 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@proj-airi/lobe-icons": "^1.0.13",
-    "ofetch": "^1.4.1",
+    "@proj-airi/lobe-icons": "^1.0.14",
+    "ofetch": "^1.5.1",
     "vaul-vue": "^0.4.1",
     "vue-vaul": "^1.0.7"
   },
@@ -32,23 +32,23 @@
     "@iconify-json/devicon": "1.2.45",
     "@iconify-json/logos": "1.2.9",
     "@iconify-json/ph": "1.2.2",
-    "@iconify-json/simple-icons": "^1.2.55",
-    "@iconify-json/solar": "^1.2.4",
+    "@iconify-json/simple-icons": "^1.2.60",
+    "@iconify-json/solar": "^1.2.5",
     "@iconify-json/svg-spinners": "~1.2.4",
     "@iconify/types": "^2.0.0",
     "@iconify/utils": "^3.0.2",
     "@package-json/types": "^0.0.12",
-    "@unocss/reset": "^66.5.4",
-    "@vitejs/plugin-vue": "^6.0.1",
+    "@unocss/reset": "^66.5.9",
+    "@vitejs/plugin-vue": "^6.0.2",
     "@vueuse/core": "^14.0.0",
     "@vueuse/motion": "^3.0.3",
-    "es-toolkit": "^1.41.0",
+    "es-toolkit": "^1.42.0",
     "iconify-icon": "^3.0.2",
     "resolve.exports": "^2.0.3",
     "splitpanes": "^4.0.4",
-    "unplugin-vue-router": "^0.16.0",
-    "vue": "^3.5.22",
+    "unplugin-vue-router": "^0.17.1",
+    "vue": "^3.5.25",
     "vue-router": "^4.6.3",
-    "vue-tsc": "^3.1.2"
+    "vue-tsc": "^3.1.5"
   }
 }
