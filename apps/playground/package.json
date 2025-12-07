@@ -32,13 +32,13 @@
     "@iconify-json/devicon": "1.2.51",
     "@iconify-json/logos": "1.2.10",
     "@iconify-json/ph": "1.2.2",
-    "@iconify-json/simple-icons": "^1.2.60",
+    "@iconify-json/simple-icons": "^1.2.61",
     "@iconify-json/solar": "^1.2.5",
     "@iconify-json/svg-spinners": "~1.2.4",
     "@iconify/types": "^2.0.0",
     "@iconify/utils": "^3.1.0",
     "@package-json/types": "^0.0.12",
-    "@unocss/reset": "^66.5.9",
+    "@unocss/reset": "^66.5.10",
     "@vitejs/plugin-vue": "^6.0.2",
     "@vueuse/core": "^14.1.0",
     "@vueuse/motion": "^3.0.3",
@@ -49,6 +49,6 @@
     "unplugin-vue-router": "^0.18.0",
     "vue": "^3.5.25",
     "vue-router": "^4.6.3",
-    "vue-tsc": "^3.1.5"
+    "vue-tsc": "^3.1.6"
   }
 }
