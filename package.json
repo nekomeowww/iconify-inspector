@@ -2,7 +2,7 @@
   "name": "@nekw/iconify-inspector-root",
   "type": "module",
   "version": "0.0.1",
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@10.25.0",
   "description": "Inspector for Iconify icons",
   "author": {
     "name": "Neko Ayaka",
