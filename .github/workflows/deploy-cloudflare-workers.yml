@@ -3,7 +3,7 @@ name: Cloudflare Workers
 on:
   push:
     branches:
-      - 'main'
+      - main
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

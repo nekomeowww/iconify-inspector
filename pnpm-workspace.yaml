@@ -1,11 +1,14 @@
+catalogMode: prefer
+
+shellEmulator: true
+
+trustPolicy: no-downgrade
+
 packages:
   - examples/**
   - packages/**
   - apps/**
 
-onlyBuiltDependencies:
-  - esbuild
-  - unrs-resolver
 overrides:
   array-flatten: npm:@nolyfill/array-flatten@^1.0.44
   axios: npm:feaxios@^0.0.23
@@ -15,3 +18,7 @@ overrides:
   safer-buffer: npm:@nolyfill/safer-buffer@^1.0.44
   side-channel: npm:@nolyfill/side-channel@^1.0.44
   string.prototype.matchall: npm:@nolyfill/string.prototype.matchall@^1.0.44
+
+onlyBuiltDependencies:
+  - esbuild
+  - unrs-resolver

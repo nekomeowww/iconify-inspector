@@ -25,8 +25,8 @@ const svg = computed(() => {
 
 <template>
   <span
-    v-html="svg"
     style="overflow: visible;"
     :class="[props.name]"
+    v-html="svg"
   />
 </template>
