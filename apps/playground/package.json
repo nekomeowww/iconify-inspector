@@ -23,7 +23,7 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@proj-airi/lobe-icons": "^1.0.14",
+    "@proj-airi/ui": "0.8.0-beta.3",
     "ofetch": "^1.5.1",
     "vaul-vue": "^0.4.1",
     "vue-vaul": "^1.0.7"
@@ -38,6 +38,8 @@
     "@iconify/types": "^2.0.0",
     "@iconify/utils": "^3.1.0",
     "@package-json/types": "^0.0.12",
+    "@proj-airi/iconify-meteocons": "^0.1.4",
+    "@proj-airi/lobe-icons": "^1.0.18",
     "@unocss/reset": "^66.5.10",
     "@vitejs/plugin-vue": "^6.0.3",
     "@vueuse/core": "^14.1.0",
@@ -46,7 +48,8 @@
     "iconify-icon": "^3.0.2",
     "resolve.exports": "^2.0.3",
     "splitpanes": "^4.0.4",
-    "unplugin-vue-router": "^0.19.0",
+    "unplugin-vue-router": "^0.19.1",
+    "virtua": "^0.48.2",
     "vue": "^3.5.25",
     "vue-router": "^4.6.4",
     "vue-tsc": "^3.1.8"

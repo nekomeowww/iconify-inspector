@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { IconifyJSON } from '@iconify/types'
 
-import { getIconCSS, getIconData } from '@iconify/utils'
+import { getIconData, iconToSVG, replaceIDs } from '@iconify/utils'
 import { computed } from 'vue'
 
 const props = defineProps<{
@@ -9,15 +9,23 @@ const props = defineProps<{
   icons: IconifyJSON
 }>()
 
-const style = computed(() => {
+const svg = computed(() => {
   const icon = getIconData(props.icons, props.name)
-  return getIconCSS(icon)
+  const { attributes, body } = iconToSVG(icon, {
+    // keep original aspect ratio, size follows font-size
+    height: '1em',
+  })
+  const attrs = Object.entries(attributes)
+    .map(([key, value]) => `${key}="${value}"`)
+    .join(' ')
+
+  return `<svg ${attrs}>${replaceIDs(body)}</svg>`
 })
 </script>
 
 <template>
-  <div
-    :style="style"
+  <span
+    v-html="svg"
     style="overflow: visible;"
     :class="[props.name]"
   />

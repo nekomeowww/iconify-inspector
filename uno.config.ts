@@ -1,56 +1,21 @@
-import type { PresetOrFactoryAwaitable } from 'unocss'
-
-import { defineConfig, mergeConfigs, presetAttributify, presetIcons, presetTypography, presetWebFonts, presetWind3, transformerDirectives, transformerVariantGroup } from 'unocss'
-import { presetScrollbar } from 'unocss-preset-scrollbar'
-
-function createColorSchemeConfig(hueOffset = 0) {
-  return {
-    DEFAULT: `oklch(62% var(--theme-colors-chroma) calc(var(--theme-colors-hue) + ${hueOffset}) / %alpha)`,
-    50: `color-mix(in srgb, oklch(95% var(--theme-colors-chroma-50) calc(var(--theme-colors-hue) + ${hueOffset}) / %alpha) 30%, oklch(100% 0 360 / %alpha))`,
-    100: `color-mix(in srgb, oklch(95% var(--theme-colors-chroma-100) calc(var(--theme-colors-hue) + ${hueOffset}) / %alpha) 80%, oklch(100% 0 360 / %alpha))`,
-    200: `oklch(90% var(--theme-colors-chroma-200) calc(var(--theme-colors-hue) + ${hueOffset}) / %alpha)`,
-    300: `oklch(85% var(--theme-colors-chroma-300) calc(var(--theme-colors-hue) + ${hueOffset}) / %alpha)`,
-    400: `oklch(74% var(--theme-colors-chroma-400) calc(var(--theme-colors-hue) + ${hueOffset}) / %alpha)`,
-    500: `oklch(62% var(--theme-colors-chroma) calc(var(--theme-colors-hue) + ${hueOffset}) / %alpha)`,
-    600: `oklch(54% var(--theme-colors-chroma-600) calc(var(--theme-colors-hue) + ${hueOffset}) / %alpha)`,
-    700: `oklch(49% var(--theme-colors-chroma-700) calc(var(--theme-colors-hue) + ${hueOffset}) / %alpha)`,
-    800: `oklch(42% var(--theme-colors-chroma-800) calc(var(--theme-colors-hue) + ${hueOffset}) / %alpha)`,
-    900: `oklch(37% var(--theme-colors-chroma-900) calc(var(--theme-colors-hue) + ${hueOffset}) / %alpha)`,
-    950: `oklch(29% var(--theme-colors-chroma-950) calc(var(--theme-colors-hue) + ${hueOffset}) / %alpha)`,
-  }
-}
-
-export function presetStoryMockHover(): PresetOrFactoryAwaitable {
-  return {
-    name: 'story-mock-hover',
-    variants: [
-      (matcher) => {
-        if (!matcher.includes('hover')) {
-          return matcher
-        }
-
-        return {
-          matcher,
-          selector: (s) => {
-            return `${s}, ${s.replace(/:hover$/, '')}._hover`
-          },
-        }
-      },
-    ],
-  }
-}
-
-export function safelistAllPrimaryBackgrounds(): string[] {
-  return [
-    ...[undefined, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950].map((shade) => {
-      const prefix = shade ? `bg-primary-${shade}` : `bg-primary`
-      return [
-        prefix,
-        ...[5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100].map(opacity => `${prefix}/${opacity}`),
-      ]
-    }).flat(),
-  ]
-}
+import { createExternalPackageIconLoader } from '@iconify/utils/lib/loader/external-pkg'
+import {
+  presetChromatic,
+} from '@proj-airi/unocss-preset-chromatic'
+import {
+  defineConfig,
+  mergeConfigs,
+  presetAttributify,
+  presetIcons,
+  presetTypography,
+  presetWebFonts,
+  presetWind3,
+  transformerDirectives,
+  transformerVariantGroup,
+} from 'unocss'
+import {
+  presetScrollbar,
+} from 'unocss-preset-scrollbar'
 
 export function sharedUnoConfig() {
   return defineConfig({
@@ -74,8 +39,19 @@ export function sharedUnoConfig() {
           failure: 10000,
         },
       }),
+      presetChromatic({
+        baseHue: 250,
+        colors: {
+          primary: 0,
+          complementary: 180,
+        },
+      }),
       presetIcons({
         scale: 1.2,
+        collections: {
+          ...createExternalPackageIconLoader('@proj-airi/lobe-icons'),
+          ...createExternalPackageIconLoader('@proj-airi/iconify-meteocons'),
+        },
       }),
       presetScrollbar(),
     ],
@@ -87,6 +63,8 @@ export function sharedUnoConfig() {
     ],
     safelist: [
       ...'prose prose-sm m-auto text-left'.split(' '),
+      ...'i-lobe-icons:openai i-lobe-icons:gemini-color i-lobe-icons:deepseek-color i-lobe-icons:deepseek i-lobe-icons:claude'.split(' '),
+      ...'i-iconify-meteocons:partly-cloudy-day-rain-fill i-iconify-meteocons:wind-beaufort-4-line i-iconify-meteocons:thunderstorms-night-fill-static'.split(' '),
     ],
     // hyoban/unocss-preset-shadcn: Use shadcn ui with UnoCSS
     // https://github.com/hyoban/unocss-preset-shadcn
@@ -111,12 +89,6 @@ export function sharedUnoConfig() {
     rules: [
       [/^mask-\[(.*)\]$/, ([, suffix]) => ({ '-webkit-mask-image': suffix.replace(/_/g, ' ') })],
     ],
-    theme: {
-      colors: {
-        primary: createColorSchemeConfig(),
-        complementary: createColorSchemeConfig(180),
-      },
-    },
   })
 }
 

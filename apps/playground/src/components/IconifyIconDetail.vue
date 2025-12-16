@@ -5,7 +5,7 @@ import { DrawerContent, DrawerHandle, DrawerOverlay, DrawerPortal, DrawerRoot, D
 <template>
   <DrawerRoot should-scale-background>
     <DrawerTrigger as-child>
-      <div>
+      <div w-fit>
         <slot />
       </div>
     </DrawerTrigger>

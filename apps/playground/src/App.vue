@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useDark, useToggle } from '@vueuse/core'
-import { RouterView } from 'vue-router'
+import { RouterLink, RouterView } from 'vue-router'
 
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
@@ -10,10 +10,10 @@ const toggleDark = useToggle(isDark)
   <div mx-auto h-full flex flex-col gap-2 w-full>
     <div grid="~ cols-[1fr_1fr_1fr]" h="56px" px-4 py-4 w-full bg="neutral-100 dark:neutral-900" fixed top-0 z-5>
       <div w-full />
-      <div w-full text-center text-nowrap>
+      <RouterLink to="/" w-full text-center text-nowrap decoration-none text-inherit>
         Iconify Inspector
-      </div>
-      <div flex justify-end gap-2>
+      </RouterLink>
+      <div flex items-center justify-end gap-2>
         <a href="https://github.com/nekomeowww/iconify-inspector" decoration-none outline-none>
           <div
             i-simple-icons:github
