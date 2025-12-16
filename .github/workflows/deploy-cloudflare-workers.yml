@@ -1,0 +1,74 @@
+name: Cloudflare Workers
+
+on:
+  push:
+    branches:
+      - 'main'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Deploy - ${{ matrix.app_name }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+
+    strategy:
+      matrix:
+        include:
+          - app_name: iconify-inspector
+            environment_name: Production
+            environment_url: https://iconify.ayaka.io/
+            cloudflare_pages_id: iconify
+            wrangler_config_path: ./apps/inspector/wrangler.toml
+            dist_directory: ./apps/iconify-inspector/dist
+            command: |
+              pnpm -F @nekw/iconify-inspector run build
+
+    environment:
+      name: ${{ matrix.environment_name }}
+      url: ${{ matrix.environment_url }}
+
+    steps:
+      - uses: actions/checkout@v6
+      # Turborepo
+      - name: Cache turbo build setup
+        uses: actions/cache@v4
+        with:
+          path: .turbo
+          key: ${{ runner.os }}-turbo-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-turbo-
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v6
+        with:
+          node-version: lts/*
+          cache: pnpm
+      # NOTICE:
+      #
+      # Here installing wrangler to global is required, or otherwise:
+      # ERR_PNPM_ADDING_TO_ROOT Running this command will add the dependency to the workspace root...
+      # error occurs.
+      #
+      # Since https://github.com/cloudflare/wrangler-action/pull/339#issuecomment-2667622947 rejected the -g support
+      # by saying un-reasonable 'I'm not sure if it's common ... to install packages to the global scope, ... might be introducing some unintended side effects.'
+      #
+      # Clearly I think installing with `<packageManager> install` brings more unintended side effects...
+      #
+      # As suggested by https://github.com/cloudflare/wrangler-action/issues/181#issuecomment-2127990708, we should pre-install
+      # with our package manager and then use it in the action.
+      - run: pnpm i -g wrangler@4
+      - run: pnpm install --frozen-lockfile
+
+      - run: ${{ matrix.command }}
+
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy -c ${{ matrix.wrangler_config_path }}
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
