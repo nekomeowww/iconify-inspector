@@ -1,14 +1,16 @@
+catalogMode: prefer
+
+shellEmulator: true
+
+trustPolicy: no-downgrade
+
+trustPolicyExclude:
+  - chokidar@4.0.3
+
 packages:
   - examples/**
   - packages/**
   - apps/**
-
-catalogMode: prefer
-
-onlyBuiltDependencies:
-  - esbuild
-  - unrs-resolver
-  - vue-demi
 
 overrides:
   array-flatten: npm:@nolyfill/array-flatten@^1.0.44
@@ -20,9 +22,7 @@ overrides:
   side-channel: npm:@nolyfill/side-channel@^1.0.44
   string.prototype.matchall: npm:@nolyfill/string.prototype.matchall@^1.0.44
 
-shellEmulator: true
-
-trustPolicy: no-downgrade
-
-trustPolicyExclude:
-  - chokidar@4.0.3
+onlyBuiltDependencies:
+  - esbuild
+  - unrs-resolver
+  - vue-demi
