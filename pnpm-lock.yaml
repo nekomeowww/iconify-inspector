@@ -88,14 +88,14 @@ importers:
   apps/inspector:
     dependencies:
       '@proj-airi/ui':
-        specifier: 0.8.0-beta.3
-        version: 0.8.0-beta.3(@nuxt/kit@3.20.1)(typescript@5.9.3)
+        specifier: 0.8.0
+        version: 0.8.0(@nuxt/kit@3.20.1)(typescript@5.9.3)
       ofetch:
         specifier: ^1.5.1
         version: 1.5.1
       vaul-vue:
         specifier: ^0.4.1
-        version: 0.4.1(reka-ui@2.6.1(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3)))(vue@3.5.26(typescript@5.9.3))
+        version: 0.4.1(reka-ui@2.7.0(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3)))(vue@3.5.26(typescript@5.9.3))
       vue-vaul:
         specifier: ^1.0.9
         version: 1.0.9(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3))
@@ -803,8 +803,8 @@ packages:
   '@proj-airi/lobe-icons@1.0.18':
     resolution: {integrity: sha512-Yft/DzWxq5MEChgJKlKXrGASAKBD6tCjr9NvGYvGViyLCHuzgRT6DUdBKKCRXxxI5M99Ilvw+i37kw873YEUpA==}
 
-  '@proj-airi/ui@0.8.0-beta.3':
-    resolution: {integrity: sha512-8f8jkKdqRflUfaS7XtKBr27ZhnP1xyY8SgrYFSWjypIj6Xd0buSOWECW5PpSdztMDItPMpY+GIooLgRBVtMYyQ==}
+  '@proj-airi/ui@0.8.0':
+    resolution: {integrity: sha512-VoC3LtK++Wubxx/iTE71cgCPfWqafUqlcvFobDILIbkXuh7GfwrKR9yc2PmwWhtEHCgwX58GCuFF81S8PPN3jQ==}
 
   '@proj-airi/unocss-preset-chromatic@1.0.2':
     resolution: {integrity: sha512-qotJTmQcP58ZECsdgzP9nQPWpkLA7PB2qcamkDtjNkLNt0hr9MZMQteTt7bLvSYCTcMVOmJznoOBlTc0P1vi6Q==}
@@ -2975,6 +2975,11 @@ packages:
     peerDependencies:
       vue: '>= 3.2.0'
 
+  reka-ui@2.7.0:
+    resolution: {integrity: sha512-m+XmxQN2xtFzBP3OAdIafKq7C8OETo2fqfxcIIxYmNN2Ch3r5oAf6yEYCIJg5tL/yJU2mHqF70dCCekUkrAnXA==}
+    peerDependencies:
+      vue: '>= 3.2.0'
+
   reserved-identifiers@1.2.0:
     resolution: {integrity: sha512-yE7KUfFvaBFzGPs5H3Ops1RevfUEsDc5Iz65rOwWg4lE8HJSYtle77uul3+573457oHvBKuHYDl/xqUkKpEEdw==}
     engines: {node: '>=18'}
@@ -4067,11 +4072,11 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@proj-airi/ui@0.8.0-beta.3(@nuxt/kit@3.20.1)(typescript@5.9.3)':
+  '@proj-airi/ui@0.8.0(@nuxt/kit@3.20.1)(typescript@5.9.3)':
     dependencies:
       '@vueuse/core': 14.1.0(vue@3.5.26(typescript@5.9.3))
       floating-vue: 5.2.2(@nuxt/kit@3.20.1)(vue@3.5.26(typescript@5.9.3))
-      reka-ui: 2.6.1(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3))
+      reka-ui: 2.7.0(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3))
       vue: 3.5.26(typescript@5.9.3)
     transitivePeerDependencies:
       - '@nuxt/kit'
@@ -6576,6 +6581,23 @@ snapshots:
       - '@vue/composition-api'
       - typescript
 
+  reka-ui@2.7.0(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3)):
+    dependencies:
+      '@floating-ui/dom': 1.7.4
+      '@floating-ui/vue': 1.1.9(vue@3.5.26(typescript@5.9.3))
+      '@internationalized/date': 3.10.0
+      '@internationalized/number': 3.6.5
+      '@tanstack/vue-virtual': 3.13.12(vue@3.5.26(typescript@5.9.3))
+      '@vueuse/core': 12.8.2(typescript@5.9.3)
+      '@vueuse/shared': 12.8.2(typescript@5.9.3)
+      aria-hidden: 1.2.6
+      defu: 6.1.4
+      ohash: 2.0.11
+      vue: 3.5.26(typescript@5.9.3)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - typescript
+
   reserved-identifiers@1.2.0: {}
 
   resolve-from@4.0.0: {}
@@ -6978,10 +7000,10 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vaul-vue@0.4.1(reka-ui@2.6.1(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3)))(vue@3.5.26(typescript@5.9.3)):
+  vaul-vue@0.4.1(reka-ui@2.7.0(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3)))(vue@3.5.26(typescript@5.9.3)):
     dependencies:
       '@vueuse/core': 10.11.1(vue@3.5.26(typescript@5.9.3))
-      reka-ui: 2.6.1(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3))
+      reka-ui: 2.7.0(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3))
       vue: 3.5.26(typescript@5.9.3)
     transitivePeerDependencies:
       - '@vue/composition-api'
