@@ -39,7 +39,7 @@
     "@antfu/nip": "~0.1.0",
     "@iconify/utils": "^3.1.0",
     "@proj-airi/unocss-preset-chromatic": "^1.0.2",
-    "@types/node": "~25.0.3",
+    "@types/node": "~25.0.6",
     "@unocss/eslint-config": "^66.5.12",
     "@unocss/eslint-plugin": "^66.5.12",
     "@unocss/preset-mini": "^66.5.12",
