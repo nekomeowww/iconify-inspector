@@ -23,7 +23,7 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@proj-airi/ui": "0.8.1",
+    "@proj-airi/ui": "0.8.4",
     "ofetch": "^1.5.1",
     "vaul-vue": "^0.4.1",
     "vue-vaul": "^1.0.9"
