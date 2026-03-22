@@ -125,8 +125,8 @@ importers:
         specifier: ^3.1.0
         version: 3.1.0
       '@package-json/types':
-        specifier: ^0.0.12
-        version: 0.0.12
+        specifier: ^0.0.13
+        version: 0.0.13
       '@proj-airi/iconify-meteocons':
         specifier: ^0.1.4
         version: 0.1.4
@@ -966,6 +966,9 @@ packages:
 
   '@package-json/types@0.0.12':
     resolution: {integrity: sha512-uu43FGU34B5VM9mCNjXCwLaGHYjXdNincqKLaraaCW+7S2+SmiBg1Nv8bPnmschrIfZmfKNY9f3fC376MRrObw==}
+
+  '@package-json/types@0.0.13':
+    resolution: {integrity: sha512-QL0MO8uptW+EdqK2Un6imfaN9gQ1G5pUEUlvPfHmNrgRTJTGVraKnRbDN5d4N/Z3cWTPDHjiEDJPDEpppldr4g==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -6191,6 +6194,8 @@ snapshots:
   '@oxc-project/types@0.115.0': {}
 
   '@package-json/types@0.0.12': {}
+
+  '@package-json/types@0.0.13': {}
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
