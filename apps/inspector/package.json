@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@iconify-json/devicon": "1.2.61",
-    "@iconify-json/logos": "1.2.10",
+    "@iconify-json/logos": "1.2.11",
     "@iconify-json/ph": "1.2.2",
     "@iconify-json/simple-icons": "^1.2.75",
     "@iconify-json/solar": "^1.2.5",
