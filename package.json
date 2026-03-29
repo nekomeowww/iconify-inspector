@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "7.4.3",
-    "@antfu/ni": "~29.0.0",
+    "@antfu/ni": "~30.0.0",
     "@antfu/nip": "~0.1.1",
     "@iconify/utils": "^3.1.0",
     "@proj-airi/unocss-preset-chromatic": "^1.0.2",
