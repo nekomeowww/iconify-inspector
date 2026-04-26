@@ -22,8 +22,8 @@ importers:
         specifier: 7.4.3
         version: 7.4.3(@unocss/eslint-plugin@66.6.8(eslint@10.2.0(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-sfc@3.5.32)(eslint@10.2.0(jiti@2.6.1))(typescript@5.9.3)(vitest@4.1.4(@types/node@25.6.0)(vite@8.0.8(@types/node@25.6.0)(esbuild@0.27.1)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.3)))
       '@antfu/ni':
-        specifier: ~30.0.0
-        version: 30.0.0
+        specifier: ~30.1.0
+        version: 30.1.0
       '@antfu/nip':
         specifier: ~0.1.1
         version: 0.1.1(@pnpm/logger@1001.0.1)(@pnpm/worker@1000.6.1(@pnpm/logger@1001.0.1)(@types/node@25.6.0))(typanion@3.14.0)
@@ -247,8 +247,8 @@ packages:
     engines: {node: '>=20'}
     hasBin: true
 
-  '@antfu/ni@30.0.0':
-    resolution: {integrity: sha512-DqBVB3XqXH4VsDpER7iLlEtayMC98iXrY7kwBzp1v6LGc/6U6+qnN3+X0bcPK63LMXJCRG2D/XDq7dvtKDGogg==}
+  '@antfu/ni@30.1.0':
+    resolution: {integrity: sha512-3VuAbPjgY52rQNn4wABaXMhBU2Oq91uy6L8nX49eJ35OLI68CyckGU+HZxcaHix4ymuGM2nFL1D6sLpgODK5xw==}
     engines: {node: '>=20.19.0'}
     hasBin: true
 
@@ -5656,14 +5656,14 @@ snapshots:
       fzf: 0.5.2
       package-manager-detector: 1.6.0
       tinyexec: 1.0.4
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.16
 
-  '@antfu/ni@30.0.0':
+  '@antfu/ni@30.1.0':
     dependencies:
       fzf: 0.5.2
       package-manager-detector: 1.6.0
       tinyexec: 1.0.4
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.16
 
   '@antfu/nip@0.1.1(@pnpm/logger@1001.0.1)(@pnpm/worker@1000.6.1(@pnpm/logger@1001.0.1)(@types/node@25.6.0))(typanion@3.14.0)':
     dependencies:
@@ -6202,7 +6202,7 @@ snapshots:
       rc9: 2.1.2
       scule: 1.3.0
       semver: 7.7.4
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.16
       ufo: 1.6.1
       unctx: 2.4.1
       untyped: 2.0.0
@@ -6575,7 +6575,7 @@ snapshots:
       '@pnpm/types': 1001.2.0
       '@pnpm/util.lex-comparator': 3.0.2
       p-filter: 2.1.0
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.16
     transitivePeerDependencies:
       - '@pnpm/logger'
 
@@ -6862,7 +6862,7 @@ snapshots:
     dependencies:
       '@pnpm/types': 1001.2.0
       is-subdir: 1.2.0
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.16
 
   '@pnpm/package-is-installable@1000.0.19(@pnpm/logger@1001.0.1)':
     dependencies:
@@ -7655,7 +7655,7 @@ snapshots:
       debug: 4.4.3
       minimatch: 9.0.5
       semver: 7.7.4
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.16
       ts-api-utils: 2.4.0(typescript@5.9.3)
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -7670,7 +7670,7 @@ snapshots:
       debug: 4.4.3
       minimatch: 10.2.4
       semver: 7.7.4
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.16
       ts-api-utils: 2.4.0(typescript@5.9.3)
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -7685,7 +7685,7 @@ snapshots:
       debug: 4.4.3
       minimatch: 10.2.4
       semver: 7.7.4
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.16
       ts-api-utils: 2.5.0(typescript@5.9.3)
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -9034,7 +9034,7 @@ snapshots:
       jsonc-eslint-parser: 2.4.2
       pathe: 2.0.3
       pnpm-workspace-yaml: 1.5.0
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.16
       yaml: 2.8.2
       yaml-eslint-parser: 2.0.0
 
@@ -10185,7 +10185,7 @@ snapshots:
       postcss: 8.5.8
       postcss-nested: 7.0.2(postcss@8.5.8)
       semver: 7.7.4
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.16
     optionalDependencies:
       typescript: 5.9.3
       vue: 3.5.32(typescript@5.9.3)
@@ -10228,7 +10228,7 @@ snapshots:
       proc-log: 5.0.0
       semver: 7.7.4
       tar: 7.5.3
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.16
       which: 5.0.0
     transitivePeerDependencies:
       - supports-color
@@ -11127,7 +11127,7 @@ snapshots:
 
   taze@19.11.0:
     dependencies:
-      '@antfu/ni': 30.0.0
+      '@antfu/ni': 30.1.0
       '@henrygd/queue': 1.2.0
       cac: 7.0.0
       find-up-simple: 1.0.1
