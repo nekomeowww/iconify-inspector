@@ -22,8 +22,8 @@ importers:
         specifier: 7.4.3
         version: 7.4.3(@unocss/eslint-plugin@66.6.8(eslint@10.2.1(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-sfc@3.5.33)(eslint@10.2.1(jiti@2.6.1))(typescript@5.9.3)(vitest@4.1.5(@types/node@25.6.0)(vite@8.0.10(@types/node@25.6.0)(esbuild@0.27.1)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.3)))
       '@antfu/ni':
-        specifier: ~30.0.0
-        version: 30.0.0
+        specifier: ~30.1.0
+        version: 30.1.0
       '@antfu/nip':
         specifier: ~0.1.1
         version: 0.1.1(@pnpm/logger@1001.0.1)(@pnpm/worker@1000.6.1(@pnpm/logger@1001.0.1)(@types/node@25.6.0))(typanion@3.14.0)
@@ -247,8 +247,8 @@ packages:
     engines: {node: '>=20'}
     hasBin: true
 
-  '@antfu/ni@30.0.0':
-    resolution: {integrity: sha512-DqBVB3XqXH4VsDpER7iLlEtayMC98iXrY7kwBzp1v6LGc/6U6+qnN3+X0bcPK63LMXJCRG2D/XDq7dvtKDGogg==}
+  '@antfu/ni@30.1.0':
+    resolution: {integrity: sha512-3VuAbPjgY52rQNn4wABaXMhBU2Oq91uy6L8nX49eJ35OLI68CyckGU+HZxcaHix4ymuGM2nFL1D6sLpgODK5xw==}
     engines: {node: '>=20.19.0'}
     hasBin: true
 
@@ -5671,12 +5671,12 @@ snapshots:
       tinyexec: 1.0.4
       tinyglobby: 0.2.16
 
-  '@antfu/ni@30.0.0':
+  '@antfu/ni@30.1.0':
     dependencies:
       fzf: 0.5.2
       package-manager-detector: 1.6.0
       tinyexec: 1.0.4
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.16
 
   '@antfu/nip@0.1.1(@pnpm/logger@1001.0.1)(@pnpm/worker@1000.6.1(@pnpm/logger@1001.0.1)(@types/node@25.6.0))(typanion@3.14.0)':
     dependencies:
@@ -11152,7 +11152,7 @@ snapshots:
 
   taze@19.11.0:
     dependencies:
-      '@antfu/ni': 30.0.0
+      '@antfu/ni': 30.1.0
       '@henrygd/queue': 1.2.0
       cac: 7.0.0
       find-up-simple: 1.0.1
