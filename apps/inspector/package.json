@@ -38,7 +38,7 @@
     "@iconify/types": "^2.0.0",
     "@iconify/utils": "^3.1.0",
     "@package-json/types": "^0.0.13",
-    "@proj-airi/iconify-meteocons": "^0.1.4",
+    "@proj-airi/iconify-meteocons": "^0.1.5",
     "@proj-airi/lobe-icons": "^1.0.19",
     "@unocss/reset": "^66.6.8",
     "@vitejs/plugin-vue": "^6.0.6",

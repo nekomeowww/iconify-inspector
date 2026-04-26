@@ -128,8 +128,8 @@ importers:
         specifier: ^0.0.13
         version: 0.0.13
       '@proj-airi/iconify-meteocons':
-        specifier: ^0.1.4
-        version: 0.1.4
+        specifier: ^0.1.5
+        version: 0.1.5
       '@proj-airi/lobe-icons':
         specifier: ^1.0.19
         version: 1.0.19
@@ -1476,8 +1476,8 @@ packages:
   '@polka/url@1.0.0-next.29':
     resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
 
-  '@proj-airi/iconify-meteocons@0.1.4':
-    resolution: {integrity: sha512-yliSwluedHb9KCYNuVzlLwSjAUVg5ufMJijqEaXTDrmenwndaIX1Bs3B4jDHQbcwR3hNvrLAlH70SSGCcBXUZA==}
+  '@proj-airi/iconify-meteocons@0.1.5':
+    resolution: {integrity: sha512-TqhG2K3kRrg4Y7IyjcQV+ik0oMVYdOubr72wejVIk1s+dJTIw3lSu6Z+C30GEIS/XvsywkH4EnJosBUVPLqv5Q==}
 
   '@proj-airi/lobe-icons@1.0.19':
     resolution: {integrity: sha512-hBB/MUYqzckzMXYDLZ7/4HRuldqEvLKhMzTcVPLUOdXR0sn9y4vk+k14tynwgeePCrUKSUTP/bnPdETqvWJzqw==}
@@ -7254,7 +7254,7 @@ snapshots:
 
   '@polka/url@1.0.0-next.29': {}
 
-  '@proj-airi/iconify-meteocons@0.1.4':
+  '@proj-airi/iconify-meteocons@0.1.5':
     dependencies:
       '@iconify/types': 2.0.0
 
