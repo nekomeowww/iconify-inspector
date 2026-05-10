@@ -88,14 +88,14 @@ importers:
   apps/inspector:
     dependencies:
       '@proj-airi/ui':
-        specifier: 0.9.0
-        version: 0.9.0(@nuxt/kit@3.20.1)(typescript@5.9.3)
+        specifier: 0.10.2
+        version: 0.10.2(@nuxt/kit@3.20.1)(typescript@5.9.3)
       ofetch:
         specifier: ^1.5.1
         version: 1.5.1
       vaul-vue:
         specifier: ^0.4.1
-        version: 0.4.1(reka-ui@2.9.2(vue@3.5.34(typescript@5.9.3)))(vue@3.5.34(typescript@5.9.3))
+        version: 0.4.1(reka-ui@2.9.7(vue@3.5.34(typescript@5.9.3)))(vue@3.5.34(typescript@5.9.3))
       vue-vaul:
         specifier: ^1.1.1
         version: 1.1.1(vue@3.5.34(typescript@5.9.3))
@@ -1467,8 +1467,8 @@ packages:
   '@proj-airi/lobe-icons@1.0.19':
     resolution: {integrity: sha512-hBB/MUYqzckzMXYDLZ7/4HRuldqEvLKhMzTcVPLUOdXR0sn9y4vk+k14tynwgeePCrUKSUTP/bnPdETqvWJzqw==}
 
-  '@proj-airi/ui@0.9.0':
-    resolution: {integrity: sha512-mZdMqW9JvPlds6OBHmc1gtoivVUJTTGoCrjl3dNRFCnfmSnzZos8wg3FqLTnqFnCoM6rPXKJ2vVGy+wmGoXCKA==}
+  '@proj-airi/ui@0.10.2':
+    resolution: {integrity: sha512-+FkS31FuoL4AmLeVTe3K1Me2h5uKiOB6lA+eLWyE0XW3feGn2njSu9tuVNMqFEjcDcL0x2HtFG2Z1rVn4i8Z6g==}
 
   '@proj-airi/unocss-preset-chromatic@1.1.1':
     resolution: {integrity: sha512-nZThnWRpxBOQwuJjLq60QKmiuAbhjuqF9CjwnxqXs1d0IeywP/0aVlmnfSoUkTqkmrHH7hqoEOy2i4W2tLMmZg==}
@@ -2906,6 +2906,9 @@ packages:
 
   defu@6.1.4:
     resolution: {integrity: sha512-mEQCMmwJu317oSz8CwdIOdwf3xMif1ttiM8LTufzc3g6kR+9Pe236twL8j3IYT1F7GfRgGcW6MWxzZjLIkuHIg==}
+
+  defu@6.1.7:
+    resolution: {integrity: sha512-7z22QmUWiQ/2d0KkdYmANbRUVABpZ9SNYyH5vx6PZ+nE5bcC0l7uFvEfHlyld/HcGBFTL536ClDt3DEcSlEJAQ==}
 
   del@6.1.1:
     resolution: {integrity: sha512-ua8BhapfP0JUJKC/zV9yHHDW/rDoDxP4Zhn3AkA6/xT6gY7jYXJiaeyBZznYVujhZZET+UgcbZiQ7sN3WqcImg==}
@@ -4766,6 +4769,11 @@ packages:
 
   reka-ui@2.9.2:
     resolution: {integrity: sha512-/t4e6y1hcG+uDuRfpg6tbMz3uUEvRzNco6NeYTufoJeUghy5Iosxos5YL/p+ieAsid84sdMX9OrgDqpEuCJhBw==}
+    peerDependencies:
+      vue: '>= 3.4.0'
+
+  reka-ui@2.9.7:
+    resolution: {integrity: sha512-aX7foYYR20v4+majO58OJJdBNfLMm0eJb448l9N4JVy8JB7GXOr4H/S4a+J1pkcoxZH8Cb7YHpJ855+miAm7sA==}
     peerDependencies:
       vue: '>= 3.4.0'
 
@@ -7249,12 +7257,12 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@proj-airi/ui@0.9.0(@nuxt/kit@3.20.1)(typescript@5.9.3)':
+  '@proj-airi/ui@0.10.2(@nuxt/kit@3.20.1)(typescript@5.9.3)':
     dependencies:
       '@moeru/std': 0.1.0-beta.17
       '@vueuse/core': 14.3.0(vue@3.5.34(typescript@5.9.3))
       floating-vue: 5.2.2(@nuxt/kit@3.20.1)(vue@3.5.34(typescript@5.9.3))
-      reka-ui: 2.9.2(vue@3.5.34(typescript@5.9.3))
+      reka-ui: 2.9.7(vue@3.5.34(typescript@5.9.3))
       vue: 3.5.34(typescript@5.9.3)
     transitivePeerDependencies:
       - '@nuxt/kit'
@@ -8731,6 +8739,8 @@ snapshots:
   define-lazy-prop@3.0.0: {}
 
   defu@6.1.4: {}
+
+  defu@6.1.7: {}
 
   del@6.1.1:
     dependencies:
@@ -10818,6 +10828,22 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  reka-ui@2.9.7(vue@3.5.34(typescript@5.9.3)):
+    dependencies:
+      '@floating-ui/dom': 1.7.4
+      '@floating-ui/vue': 1.1.9(vue@3.5.34(typescript@5.9.3))
+      '@internationalized/date': 3.10.0
+      '@internationalized/number': 3.6.5
+      '@tanstack/vue-virtual': 3.13.12(vue@3.5.34(typescript@5.9.3))
+      '@vueuse/core': 14.3.0(vue@3.5.34(typescript@5.9.3))
+      '@vueuse/shared': 14.3.0(vue@3.5.34(typescript@5.9.3))
+      aria-hidden: 1.2.6
+      defu: 6.1.7
+      ohash: 2.0.11
+      vue: 3.5.34(typescript@5.9.3)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   rename-overwrite@6.0.3:
     dependencies:
       '@zkochan/rimraf': 3.0.2
@@ -11480,10 +11506,10 @@ snapshots:
     dependencies:
       builtins: 5.1.0
 
-  vaul-vue@0.4.1(reka-ui@2.9.2(vue@3.5.34(typescript@5.9.3)))(vue@3.5.34(typescript@5.9.3)):
+  vaul-vue@0.4.1(reka-ui@2.9.7(vue@3.5.34(typescript@5.9.3)))(vue@3.5.34(typescript@5.9.3)):
     dependencies:
       '@vueuse/core': 10.11.1(vue@3.5.34(typescript@5.9.3))
-      reka-ui: 2.9.2(vue@3.5.34(typescript@5.9.3))
+      reka-ui: 2.9.7(vue@3.5.34(typescript@5.9.3))
       vue: 3.5.34(typescript@5.9.3)
     transitivePeerDependencies:
       - '@vue/composition-api'
