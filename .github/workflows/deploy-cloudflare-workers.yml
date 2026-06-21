@@ -34,7 +34,7 @@ jobs:
       url: ${{ matrix.environment_url }}
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       # Turborepo
       - name: Cache turbo build setup
         uses: actions/cache@v5
