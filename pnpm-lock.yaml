@@ -88,8 +88,8 @@ importers:
   apps/inspector:
     dependencies:
       '@proj-airi/ui':
-        specifier: 0.10.2
-        version: 0.10.2(@nuxt/kit@3.20.1)(typescript@5.9.3)
+        specifier: 0.11.0
+        version: 0.11.0(@nuxt/kit@3.20.1)(typescript@5.9.3)
       ofetch:
         specifier: ^1.5.1
         version: 1.5.1
@@ -1511,8 +1511,8 @@ packages:
   '@proj-airi/lobe-icons@1.0.19':
     resolution: {integrity: sha512-hBB/MUYqzckzMXYDLZ7/4HRuldqEvLKhMzTcVPLUOdXR0sn9y4vk+k14tynwgeePCrUKSUTP/bnPdETqvWJzqw==}
 
-  '@proj-airi/ui@0.10.2':
-    resolution: {integrity: sha512-+FkS31FuoL4AmLeVTe3K1Me2h5uKiOB6lA+eLWyE0XW3feGn2njSu9tuVNMqFEjcDcL0x2HtFG2Z1rVn4i8Z6g==}
+  '@proj-airi/ui@0.11.0':
+    resolution: {integrity: sha512-gLZuo1UKiDRhXhg4f6sqKGv3AkfLmyZw/OtojgaB3qd9/QL1BZbggqGWn9Fj8GURPoBjQtTvhStWTv5r4HUPUw==}
 
   '@proj-airi/unocss-preset-chromatic@1.1.1':
     resolution: {integrity: sha512-nZThnWRpxBOQwuJjLq60QKmiuAbhjuqF9CjwnxqXs1d0IeywP/0aVlmnfSoUkTqkmrHH7hqoEOy2i4W2tLMmZg==}
@@ -7363,7 +7363,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@proj-airi/ui@0.10.2(@nuxt/kit@3.20.1)(typescript@5.9.3)':
+  '@proj-airi/ui@0.11.0(@nuxt/kit@3.20.1)(typescript@5.9.3)':
     dependencies:
       '@moeru/std': 0.1.0-beta.17
       '@vueuse/core': 14.3.0(vue@3.5.39(typescript@5.9.3))
