@@ -54,7 +54,7 @@
     "unocss": "66.7.5",
     "unocss-preset-scrollbar": "^4.0.0",
     "vite": "^8.1.5",
-    "vite-plugin-inspect": "^11.4.1",
+    "vite-plugin-inspect": "^12.0.2",
     "vitest": "^4.1.10"
   }
 }
