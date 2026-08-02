@@ -42,7 +42,7 @@
     "@proj-airi/lobe-icons": "^1.0.19",
     "@unocss/reset": "^66.7.5",
     "@vitejs/plugin-vue": "^6.0.8",
-    "@vueuse/core": "^14.3.0",
+    "@vueuse/core": "^14.4.0",
     "@vueuse/motion": "^3.0.3",
     "es-toolkit": "^1.50.0",
     "iconify-icon": "^3.0.2",
@@ -52,6 +52,6 @@
     "virtua": "^0.50.0",
     "vue": "^3.5.40",
     "vue-router": "^5.2.0",
-    "vue-tsc": "^3.3.8"
+    "vue-tsc": "^3.3.9"
   }
 }
