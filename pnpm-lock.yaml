@@ -161,8 +161,8 @@ importers:
         specifier: ^0.19.2
         version: 0.19.2(@vue/compiler-sfc@3.5.42)(vue-router@5.3.1(@vue/compiler-sfc@3.5.42)(esbuild@0.28.0)(rolldown@1.2.5)(rollup@4.63.1)(vite@8.2.2(@types/node@25.9.5)(esbuild@0.28.0)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0))(vue@3.5.42(typescript@5.9.3)))(vue@3.5.42(typescript@5.9.3))
       virtua:
-        specifier: ^0.51.0
-        version: 0.51.0(vue@3.5.42(typescript@5.9.3))
+        specifier: ^0.51.3
+        version: 0.51.3(vue@3.5.42(typescript@5.9.3))
       vue:
         specifier: ^3.5.42
         version: 3.5.42(typescript@5.9.3)
@@ -5529,8 +5529,8 @@ packages:
     resolution: {integrity: sha512-PSvMIZS7C1MuVNBXl/CDG2pZq8EXy/NW2dHIdm3bVP5N0PC8utDK8ttXLXj44Gn3J0lQE3U7Mpm1estAOd+eiA==}
     engines: {node: '>=10.13'}
 
-  virtua@0.51.0:
-    resolution: {integrity: sha512-D4e4lTCaH5ZEb/mA0lN4urI3gMbh8USVzXkgsS1KmOMWFB5aqw79HHWyCxG1uZi6BwIgiIKHiUxcf/PLVYTm1Q==}
+  virtua@0.51.3:
+    resolution: {integrity: sha512-UQ9+GzgMO+0jP0X6QpOICTHjxQddoUESOuzRGeXGY8F6fMqNbeVdTwI4Vj8ZhO0fzPUQWi3gzYJ7Mwfm1uD7eQ==}
     peerDependencies:
       '@angular/common': '>=20.0.0'
       '@angular/core': '>=20.0.0'
@@ -11882,7 +11882,7 @@ snapshots:
     dependencies:
       semver: 7.7.4
 
-  virtua@0.51.0(vue@3.5.42(typescript@5.9.3)):
+  virtua@0.51.3(vue@3.5.42(typescript@5.9.3)):
     optionalDependencies:
       vue: 3.5.42(typescript@5.9.3)
 
