@@ -101,8 +101,8 @@ importers:
         version: 1.1.1(vue@3.5.44(typescript@5.9.3))
     devDependencies:
       '@iconify-json/devicon':
-        specifier: 1.2.70
-        version: 1.2.70
+        specifier: 1.2.71
+        version: 1.2.71
       '@iconify-json/logos':
         specifier: 1.2.15
         version: 1.2.15
@@ -804,8 +804,8 @@ packages:
     resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
     engines: {node: '>=18.18'}
 
-  '@iconify-json/devicon@1.2.70':
-    resolution: {integrity: sha512-/65PI7UrzMyIN39kz5kRW8SnE5xWaS+yAIRQr/VWtqOPZlARtCH4VXW5ci4qQTOCBVSG6u3z+u812VzL+pP8ZA==}
+  '@iconify-json/devicon@1.2.71':
+    resolution: {integrity: sha512-1o+Zl3QveZZoE6VMUl9hL4FEtyHC1NeUHO8sqBm2vb7oG1hL/43uzjKPXolG2tkQRkcEoi6TjH2qMss+xPCdAw==}
 
   '@iconify-json/logos@1.2.15':
     resolution: {integrity: sha512-87zwqEFatvpcK7lIIp0RnCbDAPWcG8bTK5hZI5SuD71za+opSuqtGvFUiSNt6wiyuY+nolrW/JW1K4/mBczWhQ==}
@@ -6402,7 +6402,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@iconify-json/devicon@1.2.70':
+  '@iconify-json/devicon@1.2.71':
     dependencies:
       '@iconify/types': 2.0.0
 
