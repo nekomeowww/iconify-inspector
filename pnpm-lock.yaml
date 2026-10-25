@@ -88,14 +88,14 @@ importers:
   apps/inspector:
     dependencies:
       '@proj-airi/ui':
-        specifier: 0.11.3
-        version: 0.11.3(@nuxt/kit@3.20.1)(typescript@5.9.3)
+        specifier: 0.12.0
+        version: 0.12.0(@nuxt/kit@3.20.1)(typescript@5.9.3)
       ofetch:
         specifier: ^1.5.1
         version: 1.5.1
       vaul-vue:
         specifier: ^0.4.1
-        version: 0.4.1(reka-ui@2.9.7(vue@3.5.44(typescript@5.9.3)))(vue@3.5.44(typescript@5.9.3))
+        version: 0.4.1(reka-ui@2.11.0(vue@3.5.44(typescript@5.9.3)))(vue@3.5.44(typescript@5.9.3))
       vue-vaul:
         specifier: ^1.1.1
         version: 1.1.1(vue@3.5.44(typescript@5.9.3))
@@ -772,17 +772,31 @@ packages:
   '@floating-ui/core@1.7.3':
     resolution: {integrity: sha512-sGnvb5dmrJaKEZ+LDIpguvdX3bDlEllmv4/ClQ9awcmCZrlx5jQyyMWFM5kBI+EyNOCDDiKk8il0zeuX3Zlg/w==}
 
+  '@floating-ui/core@1.8.0':
+    resolution: {integrity: sha512-0CIZ5itps/8x7BG8dEIhs53BvCUH2PCoogtakwRTut+Arm58sJooJ0AuZhLw2HJYIR5cMLNPBSS728sPho2khQ==}
+
   '@floating-ui/dom@1.1.1':
     resolution: {integrity: sha512-TpIO93+DIujg3g7SykEAGZMDtbJRrmnYRCNYSjJlvIbGhBjRSNTLVbNeDQBrzy9qDgUbiWdc7KA0uZHZ2tJmiw==}
 
   '@floating-ui/dom@1.7.4':
     resolution: {integrity: sha512-OOchDgh4F2CchOX94cRVqhvy7b3AFb+/rQXyswmzmGakRfkMgoWVjfnLWkRirfLEfuD4ysVW16eXzwt3jHIzKA==}
 
+  '@floating-ui/dom@1.8.0':
+    resolution: {integrity: sha512-yXSrzeHZBTZadLOlfyhCkJHNeLJnHRnRInwdZ40L7ZiaAtrBwoYlsDrX3v5zB1Utk7CLfzcOVnVVWoXEky7Ceg==}
+
   '@floating-ui/utils@0.2.10':
     resolution: {integrity: sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ==}
 
+  '@floating-ui/utils@0.2.12':
+    resolution: {integrity: sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww==}
+
   '@floating-ui/vue@1.1.9':
     resolution: {integrity: sha512-BfNqNW6KA83Nexspgb9DZuz578R7HT8MZw1CfK9I6Ah4QReNWEJsXWHN+SdmOVLNGmTPDi+fDT535Df5PzMLbQ==}
+
+  '@floating-ui/vue@2.0.1':
+    resolution: {integrity: sha512-043dyEKD9TDSfz080YH2vobubgg+NIo/9Fw4RAl7sEMpD8Am1DNrrSTl/GpMBjyGHoD/FbJY2QLawY+HSQsEIA==}
+    peerDependencies:
+      vue: '>=3.3.0'
 
   '@gwhitney/detect-indent@7.0.1':
     resolution: {integrity: sha512-7bQW+gkKa2kKZPeJf6+c6gFK9ARxQfn+FKy9ScTBppyKRWH2KzsmweXUoklqeEiHiNVWaeP5csIdsNq6w7QhzA==}
@@ -1545,8 +1559,8 @@ packages:
   '@proj-airi/lobe-icons@1.0.19':
     resolution: {integrity: sha512-hBB/MUYqzckzMXYDLZ7/4HRuldqEvLKhMzTcVPLUOdXR0sn9y4vk+k14tynwgeePCrUKSUTP/bnPdETqvWJzqw==}
 
-  '@proj-airi/ui@0.11.3':
-    resolution: {integrity: sha512-uVHNcZV4ozUimWoZIGe9uBz/1g2H7u0C03+BL+hUE8wvFu8H1m1c1Lf6bXtK2C8C4FpNUPheYivgd2yh+8/Jtg==}
+  '@proj-airi/ui@0.12.0':
+    resolution: {integrity: sha512-Cb28P6szgqlNQ8VUNK2j1fAu12h2U3y4Uzoo1aTU2MmTlN7zhWljESrdHfc8CPfQUmuBoGmE4xP/EUTqR6yrFw==}
 
   '@proj-airi/unocss-preset-chromatic@1.1.5':
     resolution: {integrity: sha512-H6QJ6YINV2ifXFLTBUzbhA3QXIeNyu/ud1gewXqeRsbzQ20hEl54a77Rov6YgFl5RqRaEkQVLRCYt4tDPpQnBQ==}
@@ -4997,13 +5011,13 @@ packages:
     resolution: {integrity: sha512-NZQZdC5wOE/H3UT28fVGL+ikOZcEzfMGk/c3iN9UGxzWHMa1op7274oyiUVrAG4B2EuFhus8SvkaYnhvW92p9Q==}
     hasBin: true
 
-  reka-ui@2.9.2:
-    resolution: {integrity: sha512-/t4e6y1hcG+uDuRfpg6tbMz3uUEvRzNco6NeYTufoJeUghy5Iosxos5YL/p+ieAsid84sdMX9OrgDqpEuCJhBw==}
+  reka-ui@2.11.0:
+    resolution: {integrity: sha512-ilkpm4bIAol4jwzm4tpm3WVcffyGOpqksNZL1k1qO9QmIwAA+q8jroxjkUGLEn/GddfdExFfvofWfQiKZszUeQ==}
     peerDependencies:
       vue: '>= 3.4.0'
 
-  reka-ui@2.9.7:
-    resolution: {integrity: sha512-aX7foYYR20v4+majO58OJJdBNfLMm0eJb448l9N4JVy8JB7GXOr4H/S4a+J1pkcoxZH8Cb7YHpJ855+miAm7sA==}
+  reka-ui@2.9.2:
+    resolution: {integrity: sha512-/t4e6y1hcG+uDuRfpg6tbMz3uUEvRzNco6NeYTufoJeUghy5Iosxos5YL/p+ieAsid84sdMX9OrgDqpEuCJhBw==}
     peerDependencies:
       vue: '>= 3.4.0'
 
@@ -6413,6 +6427,10 @@ snapshots:
     dependencies:
       '@floating-ui/utils': 0.2.10
 
+  '@floating-ui/core@1.8.0':
+    dependencies:
+      '@floating-ui/utils': 0.2.12
+
   '@floating-ui/dom@1.1.1':
     dependencies:
       '@floating-ui/core': 1.7.3
@@ -6422,7 +6440,14 @@ snapshots:
       '@floating-ui/core': 1.7.3
       '@floating-ui/utils': 0.2.10
 
+  '@floating-ui/dom@1.8.0':
+    dependencies:
+      '@floating-ui/core': 1.8.0
+      '@floating-ui/utils': 0.2.12
+
   '@floating-ui/utils@0.2.10': {}
+
+  '@floating-ui/utils@0.2.12': {}
 
   '@floating-ui/vue@1.1.9(vue@3.5.44(typescript@5.9.3))':
     dependencies:
@@ -6432,6 +6457,12 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
+
+  '@floating-ui/vue@2.0.1(vue@3.5.44(typescript@5.9.3))':
+    dependencies:
+      '@floating-ui/dom': 1.8.0
+      '@floating-ui/utils': 0.2.12
+      vue: 3.5.44(typescript@5.9.3)
 
   '@gwhitney/detect-indent@7.0.1': {}
 
@@ -7631,12 +7662,13 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@proj-airi/ui@0.11.3(@nuxt/kit@3.20.1)(typescript@5.9.3)':
+  '@proj-airi/ui@0.12.0(@nuxt/kit@3.20.1)(typescript@5.9.3)':
     dependencies:
       '@moeru/std': 0.1.0-beta.17
       '@vueuse/core': 14.4.0(vue@3.5.44(typescript@5.9.3))
       floating-vue: 5.2.2(@nuxt/kit@3.20.1)(vue@3.5.44(typescript@5.9.3))
-      reka-ui: 2.9.7(vue@3.5.44(typescript@5.9.3))
+      reka-ui: 2.11.0(vue@3.5.44(typescript@5.9.3))
+      vaul-vue: 0.4.1(reka-ui@2.11.0(vue@3.5.44(typescript@5.9.3)))(vue@3.5.44(typescript@5.9.3))
       vue: 3.5.44(typescript@5.9.3)
     transitivePeerDependencies:
       - '@nuxt/kit'
@@ -11328,10 +11360,9 @@ snapshots:
     dependencies:
       jsesc: 3.1.0
 
-  reka-ui@2.9.2(vue@3.5.44(typescript@5.9.3)):
+  reka-ui@2.11.0(vue@3.5.44(typescript@5.9.3)):
     dependencies:
-      '@floating-ui/dom': 1.7.4
-      '@floating-ui/vue': 1.1.9(vue@3.5.44(typescript@5.9.3))
+      '@floating-ui/vue': 2.0.1(vue@3.5.44(typescript@5.9.3))
       '@internationalized/date': 3.10.0
       '@internationalized/number': 3.6.5
       '@tanstack/vue-virtual': 3.13.12(vue@3.5.44(typescript@5.9.3))
@@ -11339,12 +11370,10 @@ snapshots:
       '@vueuse/shared': 14.4.0(vue@3.5.44(typescript@5.9.3))
       aria-hidden: 1.2.6
       defu: 6.1.7
-      ohash: 2.0.11
+      ohash: 2.0.12
       vue: 3.5.44(typescript@5.9.3)
-    transitivePeerDependencies:
-      - '@vue/composition-api'
 
-  reka-ui@2.9.7(vue@3.5.44(typescript@5.9.3)):
+  reka-ui@2.9.2(vue@3.5.44(typescript@5.9.3)):
     dependencies:
       '@floating-ui/dom': 1.7.4
       '@floating-ui/vue': 1.1.9(vue@3.5.44(typescript@5.9.3))
@@ -12046,10 +12075,10 @@ snapshots:
     dependencies:
       builtins: 5.1.0
 
-  vaul-vue@0.4.1(reka-ui@2.9.7(vue@3.5.44(typescript@5.9.3)))(vue@3.5.44(typescript@5.9.3)):
+  vaul-vue@0.4.1(reka-ui@2.11.0(vue@3.5.44(typescript@5.9.3)))(vue@3.5.44(typescript@5.9.3)):
     dependencies:
       '@vueuse/core': 10.11.1(vue@3.5.44(typescript@5.9.3))
-      reka-ui: 2.9.7(vue@3.5.44(typescript@5.9.3))
+      reka-ui: 2.11.0(vue@3.5.44(typescript@5.9.3))
       vue: 3.5.44(typescript@5.9.3)
     transitivePeerDependencies:
       - '@vue/composition-api'
