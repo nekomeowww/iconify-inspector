@@ -45,6 +45,9 @@ jobs:
         run: |
           pnpm run build
 
+      - name: Check production styles
+        run: pnpm run test:run
+
   typecheck:
     name: Type Check
     runs-on: ubuntu-latest

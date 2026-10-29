@@ -3,6 +3,7 @@ import {
   presetChromatic,
 } from '@proj-airi/unocss-preset-chromatic'
 import {
+  cssIdRE,
   defineConfig,
   mergeConfigs,
   presetAttributify,
@@ -78,6 +79,8 @@ export function sharedUnoConfig() {
     // It's necessary to add the following configuration if you use shadcn-vue or shadcn-svelte.
     content: {
       pipeline: {
+        // mergeConfigs produces an empty exclude list, which skips all files in the Vite integration.
+        exclude: [cssIdRE],
         include: [
           // the default
           /\.(vue|svelte|[jt]sx|mdx?|astro|elm|php|phtml|html)($|\?)/,
