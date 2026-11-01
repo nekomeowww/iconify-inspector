@@ -31,8 +31,8 @@ importers:
         specifier: ^3.1.7
         version: 3.1.7
       '@proj-airi/unocss-preset-chromatic':
-        specifier: ^1.1.5
-        version: 1.1.5
+        specifier: ^2.0.1
+        version: 2.0.1
       '@types/node':
         specifier: ~25.9.9
         version: 25.9.9
@@ -1553,6 +1553,9 @@ packages:
   '@polka/url@1.0.0-next.29':
     resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
 
+  '@proj-airi/chromatic@2.0.1':
+    resolution: {integrity: sha512-CTZMkkqYEpUdWM1eFqQcJE2FdFKWY7NyrNYfzD4908GYcSVQaJAliVTEGVajxUfOJP0aD13BSyN7vo1PmsuW/g==}
+
   '@proj-airi/iconify-meteocons@0.1.5':
     resolution: {integrity: sha512-TqhG2K3kRrg4Y7IyjcQV+ik0oMVYdOubr72wejVIk1s+dJTIw3lSu6Z+C30GEIS/XvsywkH4EnJosBUVPLqv5Q==}
 
@@ -1562,8 +1565,8 @@ packages:
   '@proj-airi/ui@0.12.0':
     resolution: {integrity: sha512-Cb28P6szgqlNQ8VUNK2j1fAu12h2U3y4Uzoo1aTU2MmTlN7zhWljESrdHfc8CPfQUmuBoGmE4xP/EUTqR6yrFw==}
 
-  '@proj-airi/unocss-preset-chromatic@1.1.5':
-    resolution: {integrity: sha512-H6QJ6YINV2ifXFLTBUzbhA3QXIeNyu/ud1gewXqeRsbzQ20hEl54a77Rov6YgFl5RqRaEkQVLRCYt4tDPpQnBQ==}
+  '@proj-airi/unocss-preset-chromatic@2.0.1':
+    resolution: {integrity: sha512-mXzCMxkO5113nhlG4dILCnh3WZgWBn45TEG5tQJzcOSpgqVmJNM9nLbLzB+JDDZ2sMXAo77WrRqSbvWoOlCWbQ==}
 
   '@quansync/fs@1.0.0':
     resolution: {integrity: sha512-4TJ3DFtlf1L5LDMaM6CanJ/0lckGNtJcMjQ1NAV6zDmA0tEHKZtxNKin8EgPaVX1YzljbxckyT2tJrpQKAtngQ==}
@@ -3007,6 +3010,10 @@ packages:
 
   csstype@3.2.3:
     resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
+
+  culori@4.0.2:
+    resolution: {integrity: sha512-1+BhOB8ahCn4O0cep0Sh2l9KCOfOdY+BXJnKMHFFzDEouSr/el18QwXEMRlOj9UY5nCeA8UN3a/82rUWRBeyBw==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
   data-uri-to-buffer@2.0.2:
     resolution: {integrity: sha512-ND9qDTLc6diwj+Xe5cdAgVTbLVdXbtxTJRXRhli8Mowuaan+0EJOtdqJ0QCHNSSPyoXGx9HX2/VMnKeC34AChA==}
@@ -7654,6 +7661,10 @@ snapshots:
 
   '@polka/url@1.0.0-next.29': {}
 
+  '@proj-airi/chromatic@2.0.1':
+    dependencies:
+      culori: 4.0.2
+
   '@proj-airi/iconify-meteocons@0.1.5':
     dependencies:
       '@iconify/types': 2.0.0
@@ -7675,7 +7686,9 @@ snapshots:
       - '@vue/composition-api'
       - typescript
 
-  '@proj-airi/unocss-preset-chromatic@1.1.5': {}
+  '@proj-airi/unocss-preset-chromatic@2.0.1':
+    dependencies:
+      '@proj-airi/chromatic': 2.0.1
 
   '@quansync/fs@1.0.0':
     dependencies:
@@ -9193,6 +9206,8 @@ snapshots:
       css-tree: 2.2.1
 
   csstype@3.2.3: {}
+
+  culori@4.0.2: {}
 
   data-uri-to-buffer@2.0.2: {}
 
