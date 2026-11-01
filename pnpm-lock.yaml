@@ -88,8 +88,8 @@ importers:
   apps/inspector:
     dependencies:
       '@proj-airi/ui':
-        specifier: 0.12.0
-        version: 0.12.0(@nuxt/kit@3.20.1)(typescript@5.9.3)
+        specifier: 0.14.1
+        version: 0.14.1(@nuxt/kit@3.20.1)(typescript@5.9.3)
       ofetch:
         specifier: ^1.5.1
         version: 1.5.1
@@ -1559,8 +1559,8 @@ packages:
   '@proj-airi/lobe-icons@1.0.19':
     resolution: {integrity: sha512-hBB/MUYqzckzMXYDLZ7/4HRuldqEvLKhMzTcVPLUOdXR0sn9y4vk+k14tynwgeePCrUKSUTP/bnPdETqvWJzqw==}
 
-  '@proj-airi/ui@0.12.0':
-    resolution: {integrity: sha512-Cb28P6szgqlNQ8VUNK2j1fAu12h2U3y4Uzoo1aTU2MmTlN7zhWljESrdHfc8CPfQUmuBoGmE4xP/EUTqR6yrFw==}
+  '@proj-airi/ui@0.14.1':
+    resolution: {integrity: sha512-moYrLWmtabj0sY8VXqpyqWKgCyQYyPU5m8XGKWZuUcBjG5HSIDRjdOA2DW89hEt2ooMdZVIg3jzizuGiec5BkQ==}
 
   '@proj-airi/unocss-preset-chromatic@1.1.5':
     resolution: {integrity: sha512-H6QJ6YINV2ifXFLTBUzbhA3QXIeNyu/ud1gewXqeRsbzQ20hEl54a77Rov6YgFl5RqRaEkQVLRCYt4tDPpQnBQ==}
@@ -6433,7 +6433,7 @@ snapshots:
 
   '@floating-ui/dom@1.1.1':
     dependencies:
-      '@floating-ui/core': 1.7.3
+      '@floating-ui/core': 1.8.0
 
   '@floating-ui/dom@1.7.4':
     dependencies:
@@ -6451,7 +6451,7 @@ snapshots:
 
   '@floating-ui/vue@1.1.9(vue@3.5.44(typescript@5.9.3))':
     dependencies:
-      '@floating-ui/dom': 1.7.4
+      '@floating-ui/dom': 1.8.0
       '@floating-ui/utils': 0.2.10
       vue-demi: 0.14.10(vue@3.5.44(typescript@5.9.3))
     transitivePeerDependencies:
@@ -7662,7 +7662,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@proj-airi/ui@0.12.0(@nuxt/kit@3.20.1)(typescript@5.9.3)':
+  '@proj-airi/ui@0.14.1(@nuxt/kit@3.20.1)(typescript@5.9.3)':
     dependencies:
       '@moeru/std': 0.1.0-beta.17
       '@vueuse/core': 14.4.0(vue@3.5.44(typescript@5.9.3))
